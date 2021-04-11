@@ -1,31 +1,15 @@
-//import "../style/styles.css";
-import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import {useSelector, useDispatch} from 'react-redux';
-import { getPatientOrders } from "../action";
 
-
-function PatientCard({
+const PatientCard = ({
   name,
   patientId,
   orderId,
   onOpenDialog
-}) {
-  const dispatch = useDispatch();
-
-  function handleClickOpen() {
-    console.log('in PatientCard', patientId);
-    /*dispatch({
-      type: 'SET_CURRUNT_USER',
-      payload: {
-        name: name,
-        patientId: patientId
-      }
-    });*/
-    //getPatientOrders(patientId);
+}) => {
+  const handleClickOpen = () => {
     onOpenDialog(patientId);
   }
 

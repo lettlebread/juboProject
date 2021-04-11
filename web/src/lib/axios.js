@@ -1,13 +1,12 @@
 import _axios from "axios"
 
 const axios = (baseURL) => {
-    //建立一個自定義的axios
-    const instance = _axios.create({
-            baseURL: baseURL || 'http://192.168.36.130:3000', //JSON-Server端口位置
-            timeout: 1000,
-        });
+const instance = _axios.create({
+        baseURL: baseURL || 'http://192.168.36.130:3000',
+        timeout: 1000,
+    });
 
-     return instance;
+  return instance;
 }
 
 export {axios};
