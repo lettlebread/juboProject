@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.cart table,
+tr,
+td,
+th {
+  margin: 0 auto;
+  max-width: 500px;
+  border-collapse: collapse;
+  border: 1px solid #888;
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+.cardContainer {
+  flex-direction: row;
+  display: flex;
+}
+
+.cardContainer .card {
+  border-style: dashed;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  margin: 5px;
+  display: block;
+}
